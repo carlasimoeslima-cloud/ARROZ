@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho 2026 - AgroConecta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">AgroConecta 2026</div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#graficos">Impacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="hero">
+            <h1>Tecnologia e Sustentabilidade no Campo</h1>
+            <p>Descubra como a inovação está transformando a agricultura e protegendo o nosso planeta.</p>
+        </section>
+
+        <section id="quiz" class="card-section">
+            <h2>Quiz do Agrinho</h2>
+            <div id="quiz-container">
+                <p id="pergunta">Carregando pergunta...</p>
+                <div id="alternativas"></div>
+                <button id="btn-proximo" onclick="proximaPergunta()" style="display:none;">Próxima</button>
+            </div>
+        </section>
+
+        <section id="graficos">
+            <h2>O Impacto da Agricultura Sustentável</h2>
+            <div class="chart-container">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido para a Categoria Programação/Robótica.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
